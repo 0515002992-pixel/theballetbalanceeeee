@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Ballet Balance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>The Ballet Balance 🩰</h1>
+  <p>Train smart. Dance longer. Stay strong.</p>
+  <p id="views">Views: 0</p>
+</header>
+
+<div class="container">
+
+  <!-- INTRO -->
+  <div class="post">
+    <h2>About This Blog</h2>
+    <p>
+      Ballet is both an art and a sport. While dedication is important, overtraining can harm both physical and mental health.  
+      This blog raises awareness and helps dancers train smarter, not harder.
+    </p>
+  </div>
+
+  <!-- PODCAST -->
+  <div class="post">
+    <h2>Podcast</h2>
+
+    <textarea class="desc-box" readonly>
+This podcast dives into overtraining in ballet—why it happens, how it affects your body and mental health, and how dancers can stay strong without burning out.
+    </textarea>
+
+    <button onclick="togglePodcast()">Show Podcast</button>
+
+    <div id="podcast" class="hidden">
+      <iframe src="https://drive.google.com/file/d/1hgNmrdAVY1_6Xz_YjhIr1R4niKQE6R73/preview"></iframe>
+    </div>
+  </div>
+
+  <!-- FLYER -->
+  <div class="post">
+    <h2>E-Flyer</h2>
+    <a href="https://canva.link/mrjake81jrsldtl" target="_blank">
+      <button>Open Flyer</button>
+    </a>
+  </div>
+
+  <!-- QUOTES -->
+  <div class="post">
+    <h2>Ballet Quotes</h2>
+    <button onclick="showQuote()">Click for Quote</button>
+    <p id="quote" class="hidden"></p>
+  </div>
+
+  <!-- MINI GAME -->
+  <div class="post">
+    <h2>Mini Game 🎮</h2>
+    <p>Build Sophie and see if she stays healthy or becomes overtrained.</p>
+
+    <div class="game-box">
+      <div id="dancer">🩰😐</div>
+      <p class="name">Sophie</p>
+
+      <p id="question">Click start to play!</p>
+      <div id="choices"></div>
+
+      <button id="startBtn" onclick="startGame()">Start Game</button>
+      <p id="result"></p>
+    </div>
+  </div>
+
+  <!-- FEEDBACK -->
+  <div class="post">
+    <h2>Feedback 💌</h2>
+    <p>Click below to share your thoughts!</p>
+
+    <a href="https://forms.gle/ynA2YR28nH61ySi19" target="_blank">
+      <button>Leave Feedback</button>
+    </a>
+  </div>
+
+</div>
+
+<footer>
+  <p>Made by Naura 🩰</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
